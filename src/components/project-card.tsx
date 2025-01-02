@@ -2,6 +2,7 @@ import "./project-card.css";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
+
 const ProjectCard = (props: {
   imageAlt: string;
   imageSrc: string;

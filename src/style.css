@@ -86,6 +86,15 @@
   padding-bottom: var(--dl-space-space-sixunits);
 }
 
+.section-container-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  flex-direction: column;
+}
+
 .section-container-projects {
   flex: 0 0 auto;
   width: 100%;
@@ -309,4 +318,11 @@
     padding-right: 22px;
     padding-left: 22px;
   }
+}
+
+@media(min-width>991){
+.main-wrapper {
+  position: relative;
+  min-height: 100vh;
+ }
 }

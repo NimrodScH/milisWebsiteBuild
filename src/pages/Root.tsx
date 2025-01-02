@@ -1,5 +1,6 @@
 import NavigationPages from "../components/navigation/navigation";
 import { Outlet } from "react-router-dom";
+import Footer from "../components/footer";
 
 function RootLayout() {
   return (
@@ -19,6 +20,7 @@ function RootLayout() {
         </main>
       </div>
     </>
+    
   );
 }
 

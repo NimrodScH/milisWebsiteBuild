@@ -1,4 +1,7 @@
 import "./contact.css";
+import { Button } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+import DeleteIcon from '@mui/icons-material/Delete';
 import { useActionState } from "react";
 import { isEmail, isNotEmpty } from "../Data/validation";
 
@@ -172,8 +175,7 @@ export default function Signup(props: { headline: boolean }) {
 
       <div className="control">
         <label htmlFor="textBox">מידע נוסף</label>
-        <textarea
-        className="speaker-card-text-default"
+        <textarea className="control-text-input"
           id="textBox"
           name="textBox"
           defaultValue={formState.enteredValues?.textBox}
@@ -199,10 +201,10 @@ export default function Signup(props: { headline: boolean }) {
         )}
       </div>
       <p className="form-actions">
-        <button type="reset" className="button button-flat">
+        <Button variant="text" type="reset" endIcon={<DeleteIcon />}>
           איפוס
-        </button>
-        <button className="button">שלח</button>
+        </Button>
+        <Button variant="contained" color="primary" endIcon={<SendIcon />}>שלח</Button>
       </p>
     </form>
   );
